@@ -4,15 +4,22 @@ import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 
 import { Menu } from "./Menu/menu";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { contentVariants } from "./animation";
 
 export const Content = () => {
     return (
-        <div className="mx-8 flex min-h-screen flex-col items-start justify-center lg:mx-16">
+        <motion.div
+            variants={contentVariants}
+            initial="initial"
+            animate="normal"
+            className="mx-8 flex min-h-screen flex-col items-start justify-center lg:mx-16"
+        >
             <div className="flex h-full flex-col justify-between space-y-20">
                 <Menu />
                 <Main />
             </div>
-        </div>
+        </motion.div>
     );
 };
 

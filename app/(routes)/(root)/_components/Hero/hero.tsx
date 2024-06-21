@@ -22,7 +22,7 @@ export const Hero = () => {
                 variants={mobileVariants}
                 initial="initial"
                 animate="normal"
-                className="fixed left-0 top-0 z-10 h-screen bg-gradient-to-r from-indigo-900 to-blue-900"
+                className="fixed left-0 top-0 z-[999999] h-screen bg-gradient-to-r from-indigo-900 to-blue-900"
             >
                 <Content />
             </motion.div>

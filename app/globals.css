@@ -33,6 +33,10 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --slide-height: 75vh;
+    --slide-spacing: 1.5rem;
+    --slide-size: 75%;
   }
 
   .dark {
@@ -72,6 +76,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground lg:bg-gradient-to-r from-indigo-900 to-blue-900;
   }
 }

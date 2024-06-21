@@ -6,8 +6,10 @@ import { useScroll, motion } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 
 import { Profile } from "./profile";
+import { About } from "./about";
+import { Works } from "./works";
 
-const sectionComponents = [Profile];
+const sectionComponents = [Profile, About, Works];
 
 export const ScrollableContent = () => {
     const ref = useRef(null);

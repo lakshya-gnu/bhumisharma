@@ -90,9 +90,39 @@ const config = {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
             },
+            transitionProperty: {
+                menu: "transform",
+            },
+            transitionTimingFunction: {
+                menu: "cubic-bezier(0.76, 0, 0.24, 1)",
+            },
+            transitionDuration: {
+                menu: "0.75s",
+            },
+            transformOrigin: {
+                "bottom-center": "bottom center",
+            },
+
+            height: {
+                "slide-height": "var(--slide-height)",
+            },
+            flex: {
+                "embla-slide": "0 0 var(--slide-size)",
+                "embla-parallax-image":
+                    "0 0 calc(115% + (var(--slide-spacing) * 2))",
+            },
+            margin: {
+                "embla-container": "0 0 0 calc(var(--slide-spacing) * -1)",
+            },
+            padding: {
+                "embla-slide": "var(--slide-spacing)",
+            },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [
+        require("tailwindcss-animate"),
+        require("tailwindcss-3d")({ legacy: true }),
+    ],
 } satisfies Config;
 
 export default config;
