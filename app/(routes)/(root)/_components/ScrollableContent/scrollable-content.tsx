@@ -8,8 +8,9 @@ import Lenis from "@studio-freight/lenis";
 import { Profile } from "./profile";
 import { About } from "./about";
 import { Works } from "./works";
+import { Contact } from "../Contact/contact";
 
-const sectionComponents = [Profile, About, Works];
+const sectionComponents = [Profile, About, Works, Contact];
 
 export const ScrollableContent = () => {
     const ref = useRef(null);
