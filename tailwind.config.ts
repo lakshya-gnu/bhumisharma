@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { mulish, noto_sans, nunito } from "./lib/fonts";
 
 const config = {
     darkMode: ["class"],
@@ -18,7 +19,24 @@ const config = {
             },
         },
         extend: {
+            fontFamily: {
+                inter: ["var(--font-inter)"],
+                open_sans: ["var(--font-open_sans)"],
+                montserrat: ["var(--font-montserrat)"],
+                poppins: ["var(--font-poppins)"],
+                raleway: ["var(--font-raleway)"],
+                rubik: ["var(--font-rubik)"],
+                nunito: ["var(--font-nunito)"],
+                noto_sans: ["var(--font-noto-sans)"],
+                mulish: ["var(--font-mulish)"],
+            },
             colors: {
+                "plastic-pink": "#FF1493",
+                "neon-pink": "#FF44CC",
+                "neon-yellow": "#FFF01F",
+                "chartreuse-yellow": "#DFFF00",
+                "electric-lime": "#CCFF00",
+                "ufo-green": "#7FFF00",
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",

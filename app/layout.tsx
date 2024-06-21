@@ -31,7 +31,6 @@ export default function RootLayout({
                 <body
                     className={cn(
                         fonts.inter.variable,
-                        fonts.manrope.variable,
                         fonts.montserrat.variable,
                         fonts.mulish.variable,
                         fonts.noto_sans.variable,
