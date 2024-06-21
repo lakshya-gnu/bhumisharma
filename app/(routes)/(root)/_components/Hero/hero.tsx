@@ -22,7 +22,7 @@ export const Hero = () => {
                 variants={mobileVariants}
                 initial="initial"
                 animate="normal"
-                className="fixed left-0 top-0 z-10 h-screen overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-900"
+                className="fixed left-0 top-0 z-10 h-screen bg-gradient-to-r from-indigo-900 to-blue-900"
             >
                 <Content />
             </motion.div>
@@ -34,7 +34,7 @@ export const Hero = () => {
             variants={desktopVariants}
             initial="initial"
             animate="normal"
-            className="fixed left-0 top-0 z-10 h-screen overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-900"
+            className="fixed left-0 top-0 z-50 h-screen bg-gradient-to-r from-indigo-900 to-blue-900"
         >
             <Content />
         </motion.div>
