@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 
-import { ClerkProvider } from "@clerk/nextjs";
-
-import { ThemeProvider } from "@/lib/providers/theme";
 import { env } from "@/lib/env";
 import { cn } from "@/lib/utils";
 import * as fonts from "@/lib/fonts";
@@ -11,8 +8,8 @@ import { Toaster } from "sonner";
 
 import "./globals.css";
 
-const APP_NAME = env.APP_NAME;
-const APP_DESCRIPTION = env.APP_DESCRIPTION;
+const APP_NAME = "Bhumi Sharma";
+const APP_DESCRIPTION = "Bhumi Sharma's Portfolio";
 
 export const metadata: Metadata = {
     title: {
@@ -28,32 +25,23 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider>
-            <html lang="en">
-                <body
-                    className={cn(
-                        fonts.inter.variable,
-                        fonts.montserrat.variable,
-                        fonts.mulish.variable,
-                        fonts.noto_sans.variable,
-                        fonts.nunito.variable,
-                        fonts.open_sans.variable,
-                        fonts.poppins.variable,
-                        fonts.raleway.variable,
-                        fonts.rubik.variable,
-                    )}
-                >
-                    <ThemeProvider
-                        attribute="class"
-                        defaultTheme="light"
-                        enableSystem
-                        disableTransitionOnChange
-                    >
-                        {children}
-                        <Toaster />
-                    </ThemeProvider>
-                </body>
-            </html>
-        </ClerkProvider>
+        <html lang="en">
+            <body
+                className={cn(
+                    fonts.inter.variable,
+                    fonts.montserrat.variable,
+                    fonts.mulish.variable,
+                    fonts.noto_sans.variable,
+                    fonts.nunito.variable,
+                    fonts.open_sans.variable,
+                    fonts.poppins.variable,
+                    fonts.raleway.variable,
+                    fonts.rubik.variable,
+                )}
+            >
+                {children}
+                <Toaster />
+            </body>
+        </html>
     );
 }
