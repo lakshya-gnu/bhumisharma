@@ -7,6 +7,8 @@ import { env } from "@/lib/env";
 import { cn } from "@/lib/utils";
 import * as fonts from "@/lib/fonts";
 
+import { Toaster } from "sonner";
+
 import "./globals.css";
 
 const APP_NAME = env.APP_NAME;
@@ -48,6 +50,7 @@ export default function RootLayout({
                         disableTransitionOnChange
                     >
                         {children}
+                        <Toaster />
                     </ThemeProvider>
                 </body>
             </html>
